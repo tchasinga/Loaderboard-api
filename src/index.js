@@ -9,3 +9,8 @@ getSavedData.innerHTML += dataGet.map((displayer) => {
 
   return data;
 }).join('');
+const el = document.querySelector('.svg');
+const elWrapperClone = el.innerHTML;
+document.getElementById('button').addEventListener('click', () => {
+  el.innerHTML = elWrapperClone;
+});
