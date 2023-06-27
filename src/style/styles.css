@@ -84,7 +84,7 @@ form {
 }
 
 .animate__bounceIn:hover {
-  animation: bounceIn 1s;
+  animation: bounceIn 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
