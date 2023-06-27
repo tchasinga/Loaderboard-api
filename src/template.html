@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" defer src="./index.js"></script>
+    <title>Loader-board</title>
+</head>
+<body>
+  <header>
+     <nav>
+        <ul>
+            <li class=""><a href="#">Loader-board Api</a></li>
+        </ul>
+     </nav>
+  </header>
+<section class="getGrid">
+    <div class="gridOne">
+       <h1>Saved data</h1>
+       <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="-263.5 236.5 26 26">
+          <g class="svg-success">
+            <circle cx="-250.5" cy="249.5" r="12"/>
+            <path d="M-256.46 249.65l3.9 3.74 8.02-7.8"/>
+          </g>
+        </svg>
+      </div>
+      <button id="button" class="animate__bounceIn">Refresh</button>
+       <p>Here is the list of all saved scores.</p>
+        <div class="getSavedData">
+           
+        </div>
+    </div>
+    <div class="gridTwo">
+        <h1 class="getScore animate__fadeIn">Add your Score</h1>
+        <form id="form">
+            <div class="controller">
+                <input type="text" id="textInput" class="input" required placeholder="Set your name">
+              </div>
+              <div class="controller">
+                <input type="number" id="emailInput" class="input" required placeholder="Set your Score">
+              </div>
+              <input type="submit" class="btn animate__bounceIn" id="submit">
+        </form>
+    </div>
+</section>
+</body>
+</html>
