@@ -51,13 +51,13 @@ nav ul {
   border-radius: 10px 0 40px 10px;
 }
 
-/* set code part of form */
+/* Set code part of form */
 form {
   padding-top: 10%;
   padding-bottom: 10%;
 }
 
-/* simple animation */
+/* Simple animation */
 .input {
   border: 2px solid #e8e8e8;
   padding: 15px;
@@ -100,22 +100,22 @@ form {
   stroke-width: 2px;
   stroke: #8ec343;
   fill: none;
+}
 
-  & path {
-    stroke-dasharray: 17px, 17px;
-    stroke-dashoffset: 0;
-    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
-    animation: checkmark 0.25s ease-in-out 0.7s backwards;
-  }
+.svg-success path {
+  stroke-dasharray: 17px, 17px;
+  stroke-dashoffset: 0;
+  -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  animation: checkmark 0.25s ease-in-out 0.7s backwards;
+}
 
-  & circle {
-    stroke-dasharray: 76px, 76px;
-    stroke-dashoffset: 0;
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
-    -webkit-animation: checkmark-circle 0.6s ease-in-out forwards;
-    animation: checkmark-circle 0.6s ease-in-out forwards;
-  }
+.svg-success circle {
+  stroke-dasharray: 76px, 76px;
+  stroke-dashoffset: 0;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  -webkit-animation: checkmark-circle 0.6s ease-in-out forwards;
+  animation: checkmark-circle 0.6s ease-in-out forwards;
 }
 
 @keyframes checkmark {
@@ -138,7 +138,7 @@ form {
   }
 }
 
-/* put that svg class in the top left */
+/* Place SVG class in the top right corner */
 .svg {
   position: fixed;
   top: 2%;
@@ -156,7 +156,7 @@ form {
   cursor: pointer;
 }
 
-/* great */
+/* Great */
 .getSavedData {
   background: #ff9292;
   color: #fff;
@@ -197,23 +197,38 @@ form {
   padding-top: 10px;
 }
 
-@media only screen and (max-width: 760px) {
+/* Responsive design for mobile view */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    font-size: 18px;
+  }
+
   .getGrid {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
   }
 
-  .gridOne {
-    gap: 10px;
-    background: #a37f7f;
-  }
-
+  .gridOne,
   .gridTwo {
-    gap: 10px;
-    background: #c4b7b7;
+    border-radius: 10px;
+  }
+
+  form {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+  #submit {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20px;
+  }
+
+  .getScore {
+    top: 0;
+  }
+
+  .controller input {
+    width: 100%;
   }
 }
