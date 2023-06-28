@@ -140,15 +140,15 @@ form {
 
 /* put that svg class in the top left */
 .svg {
-  position: absolute;
-  top: 20%;
-  left: 3%;
+  position: fixed;
+  top: 2%;
+  right: 3%;
 }
 
 #button {
-  position: absolute;
-  top: 20%;
-  right: 52%;
+  position: fixed;
+  top: 2%;
+  right: 8%;
   color: rgb(19, 18, 18);
   font-size: 10px;
   padding: 5px 19px;
